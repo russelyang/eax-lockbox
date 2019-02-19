@@ -9,6 +9,7 @@ import styles from './styles.css'
 export type Props = { text: string }
 
 import CardNumber from './components/CardNumber/CardNumber';
+import {PaymentInfo} from './components/PaymentInfo/PaymentInfo';
 
 class ExampleComponent extends React.Component<Props> {
   render() {
@@ -24,4 +25,4 @@ class ExampleComponent extends React.Component<Props> {
   }
 }
 
-export {ExampleComponent, CardNumber}
+export {ExampleComponent, CardNumber, PaymentInfo}

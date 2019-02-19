@@ -15,15 +15,28 @@ npm install --save eax-lockbox
 ```tsx
 import * as React from 'react'
 
-import MyComponent from 'eax-lockbox'
+import {PaymentInfo} from 'eax-lockbox'
+
+const onSubmit = (values) => consloe.log(values)
 
 class Example extends React.Component {
   render () {
     return (
-      <MyComponent />
+      <PaymentInfo onSubmit={onSubmit}/>
     )
   }
 }
+```
+
+### Run
+```bash
+cd eax-lockbox
+yarn start
+```
+start example site
+```bash
+cd eax-lockbox/example
+yarn start
 ```
 
 ## License

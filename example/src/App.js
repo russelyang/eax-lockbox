@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import {ExampleComponent, CardNumber} from 'eax-lockbox'
+import {ExampleComponent, CardNumber, PaymentInfo} from 'eax-lockbox'
 
+const onSubmit = values => {
+  console.log(values)
+}
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
-        <CardNumber />
+        <PaymentInfo onSubmit={onSubmit} />
       </div>
     )
   }
