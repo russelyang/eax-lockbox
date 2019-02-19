@@ -2,13 +2,15 @@
  * @class ExampleComponent
  */
 
-import * as React from 'react'
+import * as React from 'react';
 
 import styles from './styles.css'
 
 export type Props = { text: string }
 
-export default class ExampleComponent extends React.Component<Props> {
+import CardNumber from './components/CardNumber/CardNumber';
+
+class ExampleComponent extends React.Component<Props> {
   render() {
     const {
       text
@@ -21,3 +23,5 @@ export default class ExampleComponent extends React.Component<Props> {
     )
   }
 }
+
+export {ExampleComponent, CardNumber}
